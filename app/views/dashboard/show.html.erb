@@ -1,0 +1,9 @@
+<h1>Welcome, <%= current_user.username %></h1>
+
+<h2>All Repos</h2>
+<% @repos.each do |repo| %>
+  <ul>
+    <li><%= repo.name %></li>
+    <li><%= repo.private %></li>
+  </ul>
+<% end %>
